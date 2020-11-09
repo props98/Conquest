@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,72 +8,78 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__wrap">
-      <div class="header menu">
-        <button class="menu__burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-      <div class="header logo">
-        <a href="index.html" class="logo__link">
-          <img src="images/logo.png" alt="" class="logo__img">
-        </a>
-      </div>
-      <div class="header user-group">
-        <div class="user-group__search">
-          <input type="text" class="user-group__input">
-          <button class="user-group__btn user-group__btn--search">
-            <svg class="icon user-group__icon">
-              <use xlink:href="images/sprite.svg#search"></use>
-            </svg>
-          </button>
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header menu menu--active">
+          <!-- <input class="menu__input" type="checkbox" id="toggle">
+          <label class="menu__label toggle-container" for="toggle"></label> -->
+          <span class="menu__btn btn-toggle"></span>
+          <!-- <nav class="menu__nav-list">
+            <a href="#" class="menu__nav-item">Упрвление</a>
+            <a href="#" class="menu__nav-item">Часы</a>
+            <a href="#" class="menu__nav-item">Ремешки</a>
+            <a href="#" class="menu__nav-item">Меню</a>
+          </nav> -->
         </div>
-        <div class="user-group__like">
+        <div class="header__logo logo">
+          <a href="index.html" class="logo__link">
+            <img src="images/logo.png" alt="" class="logo__img">
+          </a>
+        </div>
+
+        <div class="header__user-group user-group">
+          <form class="user-group__search">
+            <input type="search" class="user-group__input" placeholder="Search">
+            <button type="submit" class="user-group__btn">
+              <svg class="icon user-group__icon user-group__icon--search">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
           <button class="user-group__btn user-group__btn--like">
-            <svg class="icon user-group__icon">
+            <svg class="icon user-group__icon user-group__icon--like">
               <use xlink:href="images/sprite.svg#like"></use>
             </svg>
           </button>
-        </div>
-        <div class="user-group__basket">
           <button class="user-group__btn user-group__btn--basket">
-            <svg class="icon user-group__icon">
+            <svg class="icon user-group__icon user-group__icon--basket">
               <use xlink:href="images/sprite.svg#basket"></use>
             </svg>
           </button>
         </div>
       </div>
-    </div>
-    <div class="hero">
-      <div class="hero social">
-        <a href="" class="social__link social__link--inst">
-          <svg class="icon user-group__icon">
-            <use xlink:href="images/sprite.svg#inst"></use>
-          </svg>
-        </a>
-        <a href="" class="social__link social__link--fb">
-          <svg class="icon user-group__icon">
-            <use xlink:href="images/sprite.svg#fb"></use>
-          </svg>
-        </a>
-        <a href="" class="social__link social__link--twit">
-          <svg class="icon user-group__icon">
-            <use xlink:href="images/sprite.svg#twit"></use>
-          </svg>
-        </a>
+
+      <div class="header__hero hero">
+        <div class="hero__wrap">
+          <div class="hero social">
+            <a href="" class="social__link">
+              <svg class="icon social__icon social__icon--inst">
+                <use xlink:href="images/sprite.svg#inst"></use>
+              </svg>
+            </a>
+            <a href="" class="social__link">
+              <svg class="icon social__icon social__icon--fb">
+                <use xlink:href="images/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="" class="social__link">
+              <svg class="icon social__icon social__icon--twit">
+                <use xlink:href="images/sprite.svg#twit"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="hero__info info">
+            <h2 class="info__text">Весна/Лето 2019<br><span>Коллекция</span></h2>
+            <h1 class="info__title">Щвейцарские часы в наличии в Москве и с доставкой по всему миру</h1>
+            <a href="#" class="link-btn link-btn__hero">Смотреть каталог</a>
+          </div>
+          <div class="hero__bg">
+            <img src="images/watch_main@1x.png" alt="photo: watch Rapid" class="hero__img">
+          </div>
+        </div>
       </div>
-      <div class="hero textblock">
-        <h2 class="textblock__text">Весна/Лето 2019<span>Коллекция</span></h2>
-        <h1 class="textblock__title">Щвейцарские часы в наличии в Москве и с доставкой по всему миру</h1>
-      </div>
-      <a href="#" class="link-btn">Смотреть каталог</a>
+      <!-- /.hero -->
     </div>
-    <div class="hero hero-watch">
-      <img src="images/watch_main@1x.png" alt="photo: watch Rapid" class="hero-watch__img">
-    </div>
-    <!-- /.hero -->
   </header>
   <!-- /.header -->
 </body>
