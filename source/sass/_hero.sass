@@ -2,6 +2,50 @@
   &__wrap
     display: flex
     align-items: center
+    position: relative
   &__bg
-    margin-left: 134px
+    position: relative
+    padding-left: 170px
     margin-top: -80px
+    overflow: hidden
+    max-height: 765px
+    &::before
+      content: ''
+      position: absolute
+      z-index: -5
+      top: -100px
+      right: 170px
+      width: 472.5px
+      height: 945px
+      border-radius: 100% 0 0 100%/50% 0 0 50%
+      background: linear-gradient(180deg, $gradient-dark 0%, $gradient-light 100%);
+  &__price
+    +prata
+    font-size: 16px
+    position: absolute
+    top: 50px
+    right: 560px
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -65px
+      width: 50px
+      height: 1px
+      background: $dark
+  &__size
+    +prata
+    font-size: 16px
+    position: absolute
+    bottom: 110px
+    right: 30px
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: -65px
+      width: 50px
+      height: 1px
+      background: $dark
