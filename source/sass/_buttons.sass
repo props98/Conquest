@@ -1,18 +1,24 @@
-.link-btn
+.link
   display: block
-  padding: 27px 38px
-  background: $dark
   text-decoration: none
   text-align: center
-  text-transform: uppercase
   letter-spacing: 1px
   &__hero
     width: 129px
+    padding: 27px 38px
     color: #ffffff
     background: $dark-color
+    text-transform: uppercase
     &:hover
       background: $pink
       color: $dark
     &:focus
       background: $pink
       color: $dark
+  &__goods
+    +roboto-regular
+    font-size: 16px
+    color: $dark-color
+    margin-left: 328px
+    padding-bottom: 5px
+    border-bottom: 1px solid $pink
