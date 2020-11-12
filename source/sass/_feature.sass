@@ -1,33 +1,48 @@
 .features
   &__list
-    display: flex
-    justify-content: space-between
-    align-content: space-between
-    flex-flow: row wrap
     list-style: none
-    // min-height: 730px
     padding: 0
     margin: 0
-    outline: 1px  solid red
+    display: flex
+    justify-content: space-between
+    flex-flow: row wrap
+    margin-bottom: 77px
   &__item
     display: flex
-    flex-direction: column
+    align-items: center
+    background: lightgrey
+    padding: 40px 0 40px 40px
+    &:nth-child(1)
+      width: 290px
+      height: 467px
+      margin-right: 40px
+      margin-bottom: 40px
+    &:nth-child(2)
+      width: 680px
+      height: 467px
+      flex-grow: 2
+      margin-bottom: 40px
+    &:nth-child(3)
+      height: 220px
+      flex-grow: 1
+      margin-right: 40px
+    &:nth-child(4)
+      height: 220px
+      flex-grow: 1
+  &__img-wrapper
+    overflow: hidden
+    margin: 0
+  &__text-wrapper
+    height: 100%
+    display: flex
+    flex-flow: column
     justify-content: space-between
-    background: $pink-light
-    min-width: 370px
-    min-height: 467px
-    padding-top: 40px
-    padding-left: 40px
-    padding-bottom: 40px
-    padding-right: 20px
-    position: relative
   &__title
     +playfair-bold
     font-size: 14px
+    text-transform: uppercase
     color: #dark
   &__price
     +prata
     font-size: 12px
     margin-bottom: auto
-  &__img
-    position: absolute
