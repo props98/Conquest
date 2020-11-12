@@ -1,0 +1,33 @@
+.features
+  &__list
+    display: flex
+    justify-content: space-between
+    align-content: space-between
+    flex-flow: row wrap
+    list-style: none
+    // min-height: 730px
+    padding: 0
+    margin: 0
+    outline: 1px  solid red
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background: $pink-light
+    min-width: 370px
+    min-height: 467px
+    padding-top: 40px
+    padding-left: 40px
+    padding-bottom: 40px
+    padding-right: 20px
+    position: relative
+  &__title
+    +playfair-bold
+    font-size: 14px
+    color: #dark
+  &__price
+    +prata
+    font-size: 12px
+    margin-bottom: auto
+  &__img
+    position: absolute

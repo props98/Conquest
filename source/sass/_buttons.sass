@@ -1,7 +1,6 @@
 .link
   display: block
   text-decoration: none
-  text-align: center
   letter-spacing: 1px
   &__hero
     width: 129px
@@ -9,6 +8,7 @@
     color: #ffffff
     background: $dark-color
     text-transform: uppercase
+    text-align: center
     &:hover
       background: $pink
       color: $dark
@@ -19,6 +19,21 @@
     +roboto-regular
     font-size: 16px
     color: $dark-color
-    margin-left: 328px
     padding-bottom: 5px
     border-bottom: 1px solid $pink
+    align-self: flex-end
+  &__features
+    +playfair-regular
+    font-size: 16px
+    color: $dark
+    position: relative
+    padding-left: 48px
+    &::before
+      content: ""
+      position: absolute
+      width: 30px
+      height: 1px
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      background: $pink
