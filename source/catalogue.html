@@ -30,7 +30,7 @@
         </div>
 
         <nav class="catalogue-nav catalogue-nav--wrap">
-          <a href="#" class="catalogue-nav__link catalogue-nav__link--active">каталог</a>
+          <a href="#" class="catalogue-nav__link catalogue-nav__link--active">Каталог</a>
           <a href="#" class="catalogue-nav__link">Ауции</a>
           <a href="#" class="catalogue-nav__link">Доставка</a>
           <a href="#" class="catalogue-nav__link">Контакты</a>
@@ -64,6 +64,83 @@
       </nav>
     </div>
   </header>
+  <main class="catalogue catalogue__main">
+    <div class="container">
+      <section class="form">
+        <h1 class="form__title">Мужские часы</h1>
+        <form action="#" method="post" class="form">
+          <fieldset>
+            <legend>Стоимость</legend>
+    
+          </fieldset>
+  
+          <fieldset>
+            <legend>Бренд</legend>
+            <input type="checkbox" id="Techne" name="brend" value="Techne" checked>
+            <label for="Techne">Techne</label>
+            <input type="checkbox" id="Rado" name="brend" value="Techne" checked>
+            <label for="Rado">Rado</label>
+            <input type="checkbox" id="Bvlgari" name="brend" value="Techne" checked>
+            <label for="Bvlgari">Bvlgari</label>
+            <input type="checkbox" id="Tissot" name="brend" value="Techne">
+            <label for="Tissot">Tissot</label>
+            <input type="checkbox" id="Omega" name="brend" value="Techne">
+            <label for="Omega">Omega</label>
+            <input type="checkbox" id="Montblanc" name="brend" value="Techne">
+            <label for="Montblanc">Montblanc</label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Механизм</legend>
+            <select name="wheel" id="wheel">
+              <option value="quartz">Кварцевые</option>
+            </select>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Материал</legend>
+            <select name="material" id="material">
+              <option value="leather">Кожа</option>
+              <option value="metal">Mеталл</option>
+            </select>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Цвет</legend>
+            <select name="color" id="color">
+              <option value="red">Красный</option>
+              <option value="black">Черный</option>
+            </select>
+          </fieldset>
+  
+          <input type="submit" name="reset" value="Сбросить фильтр">
+  
+        </form>
+  
+      </section>
+      <!-- /.form -->
+  
+      <section class="goods">
+        <div class="catalogue__sort sort">
+          <p class="sort_text">Сортировать по <span>популярности</span></p>
+        </div>
+        <div class="goods__cards cards">
+          <div class="cards__wrapper">
+            <div class="card">
+              <h2 class="card__title">Techne</h2>
+              <p class="card__price">12 700</p>
+              <div class="card__choice">
+                <a href="#" class="card__link-like"></a>
+                <a href="#" class="card__link-basket"></a>
+              </div>
+              <img src="#" alt="" class="card__img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.goods -->
+    </div>
+  </main>
 
 </body>
 </html>
