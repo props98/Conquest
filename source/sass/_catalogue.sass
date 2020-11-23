@@ -1,0 +1,48 @@
+.catalogue
+  margin-bottom: 78px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 836px
+  &__sort
+    margin-bottom: 49px
+    padding-top: 20px
+    font-size: 14px
+    display: flex
+    justify-content: flex-end
+  &__sort-text
+    margin: 0
+    span
+      color: $dark-light
+  &__breadcrumbs
+    display: flex
+    justify-content: flex-end
+    position: relative
+    padding: 0 20px
+    &::before
+      content: ""
+      width: 13px
+      height: 13px
+      border-left: 1px solid $dark
+      border-bottom: 1px solid $dark
+      transform: rotate(45deg)
+      top: 0
+      left: 0
+    &::after
+      content: ""
+      width: 13px
+      height: 13px
+      border-right: 1px solid $dark
+      border-bottom: 1px solid $dark
+      transform: rotate(-45deg)
+      top: 0
+      right: 0
+  &__breadcrumbs-link
+    display: block
+    margin: 0 5px
+    text-decoration: none
+    font-size: 14px
+    color: $dark-light
+    &:hover
+      color: $dark
