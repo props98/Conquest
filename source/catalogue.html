@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conquest - Каталог</title>
   <link rel="stylesheet" href="css/style.css">
+  <title>Conquest catalogue</title>
 </head>
 <body>
   <header class="header header-catalogue">
@@ -64,81 +64,111 @@
       </nav>
     </div>
   </header>
-  <main class="catalogue catalogue__main">
     <div class="container">
-      <section class="form">
-        <h1 class="form__title">Мужские часы</h1>
-        <form action="#" method="post" class="form">
-          <fieldset>
-            <legend>Стоимость</legend>
+      <div class="row">
+
+        <aside class="sidebar">
+          <h1 class="sidebar__title">Мужские часы</h1>
+  
+          <!-- action="https://echo.htmlacademy.ru" -->
+          <form class="form">
+  
+            <!-- Диапозонный фильтр -->
+            <!-- filter#1  -->
+            <div class="widget">
+              <h2 class="widget__title">Стоимость</h2>
+              <div class="widget__body"></div>
+            </div>
+  
+            <!-- filter#2  -->
+            <div class="widget">
+              <h2 class="widget__title">Бренд</h2>
+              <div class="widget__body">
+                <label class="checkbox" for="Techne">
+                  <input class="checkbox__real" type="checkbox" id="Techne" name="brend" value="Techne" checked>
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Techne</span>
+                </label>
+  
+                <label class="checkbox" for="Rado">
+                  <input class="checkbox__real" type="checkbox" id="Rado" name="brend" value="Rado" checked>
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Rado</span>
+                </label>
+  
+                <label class="checkbox" for="Bvlgari">
+                  <input class="checkbox__real" type="checkbox" id="Bvlgari" name="brend" value="Bvlgari" checked>
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Bvlgari</span>
+                </label>
+  
+                <label class="checkbox" for="Tissot">
+                  <input class="checkbox__real" type="checkbox" id="Tissot" name="brend" value="Tissot">
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Tissot</span>
+                </label>
+  
+                <label class="checkbox" for="Omega">
+                  <input class="checkbox__real" type="checkbox" id="Omega" name="brend" value="Omega">
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Omega</span>
+                </label>
+  
+                <label class="checkbox" for="Montblanc">
+                  <input class="checkbox__real" type="checkbox" id="Montblanc" name="brend" value="Montblanc">
+                  <span class="checkbox__fake"></span>
+                  <span class="checkbox__title">Montblanc</span>
+                </label>
+              </div>
+  
+              <!-- filter#3  -->
+              <div class="widget">
+                <h2 class="widget__title">Механизм</h2>
+                <div class="widget__body"></div>
+              </div>
+  
+              <!-- filter#4  -->
+              <div class="widget">
+                <h2 class="widget__title">Материал</h2>
+                <div class="widget__body"></div>
+              </div>
+  
+              <!-- filter#5  -->
+              <div class="widget">
+                <h2 class="widget__title">Цвет</h2>
+                <div class="widget__body"></div>
+              </div>
+  
+              <div class="widget">
+                <div class="widget__body">
+                  <button class="form-btn form-btn--reset">Cбросить фильтр</button>
+                </div>
+              </div>
+  
+            </div>  
+          </form>
     
-          </fieldset>
-  
-          <fieldset>
-            <legend>Бренд</legend>
-            <input type="checkbox" id="Techne" name="brend" value="Techne" checked>
-            <label for="Techne">Techne</label>
-            <input type="checkbox" id="Rado" name="brend" value="Techne" checked>
-            <label for="Rado">Rado</label>
-            <input type="checkbox" id="Bvlgari" name="brend" value="Techne" checked>
-            <label for="Bvlgari">Bvlgari</label>
-            <input type="checkbox" id="Tissot" name="brend" value="Techne">
-            <label for="Tissot">Tissot</label>
-            <input type="checkbox" id="Omega" name="brend" value="Techne">
-            <label for="Omega">Omega</label>
-            <input type="checkbox" id="Montblanc" name="brend" value="Techne">
-            <label for="Montblanc">Montblanc</label>
-          </fieldset>
-  
-          <fieldset>
-            <legend>Механизм</legend>
-            <select name="wheel" id="wheel">
-              <option value="quartz">Кварцевые</option>
-            </select>
-          </fieldset>
-  
-          <fieldset>
-            <legend>Материал</legend>
-            <select name="material" id="material">
-              <option value="leather">Кожа</option>
-              <option value="metal">Mеталл</option>
-            </select>
-          </fieldset>
-  
-          <fieldset>
-            <legend>Цвет</legend>
-            <select name="color" id="color">
-              <option value="red">Красный</option>
-              <option value="black">Черный</option>
-            </select>
-          </fieldset>
-  
-          <input type="submit" name="reset" value="Сбросить фильтр">
-  
-        </form>
-  
-      </section>
-      <!-- /.form -->
-  
-      <section class="goods">
-        <div class="catalogue__sort sort">
-          <p class="sort_text">Сортировать по <span>популярности</span></p>
-        </div>
-        <div class="goods__cards cards">
-          <div class="cards__wrapper">
-            <div class="card">
+        </aside>
+        <!-- /.form -->
+    
+        <main class="goods">
+          <div class="goods__sort">
+            <p class="goods__sort_text">Сортировать по <span>популярности</span></p>
+          </div>
+          <div class="card">
+            <div class="card__content">
               <h2 class="card__title">Techne</h2>
               <p class="card__price">12 700</p>
-              <div class="card__choice">
-                <a href="#" class="card__link-like"></a>
-                <a href="#" class="card__link-basket"></a>
-              </div>
-              <img src="#" alt="" class="card__img">
+              <a href="#" class="card__icon-like"></a>
+              <a href="#" class="card__icon-basket"></a>
+            </div>
+            <div class="card__img">
+              <img src="images/watch-goods#1@1x.png" alt="photo: Techne">
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /.goods -->
+        </main>
+        <!-- /.goods -->
+      </div>
     </div>
   </main>
 
